@@ -5,6 +5,8 @@ const app = express()
 // middleware
 const notFoundMiddleware = require('./middleware/not-found')
 
+app.use(express.json())
+
 // database connection
 const dbConnect = require('./database/db-connection')
 
